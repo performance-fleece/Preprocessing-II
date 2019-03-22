@@ -1,7 +1,11 @@
 .footer {
+  max-width: 1000px;
   width: 100%;
   border-top: 2px dashed silver;
   background: @sandy-beach;
+  @media @mobile {
+    max-width: 500px;
+  }
   
   p {
     text-align: center;
