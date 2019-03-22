@@ -1,1 +1,24 @@
 // Navigation Styles here
+.navigation {
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: space-between;
+padding: 24px 0;
+margin: 0 auto;
+border-bottom: 2px dashed @navigation-border;
+    h1 {
+        align-self: flex-start;
+    }
+    .links {
+        
+        justify-content: flex-end;
+
+        a {
+            text-decoration: none;
+            color: @font-color;
+            font-size: 1.6rem;
+            padding-right: 2.92rem;
+        }
+    }
+}
