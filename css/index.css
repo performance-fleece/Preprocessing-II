@@ -164,9 +164,9 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px ;
+  max-width: 1000px ;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 @media (max-width: 600px) {
   .container {
@@ -179,9 +179,10 @@ img {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
-  margin: 0 auto;
+  padding: 24px 10em;
+  margin: 0;
   border-bottom: 2px dashed #C0C0C0;
+  width: 100%;
 }
 @media (max-width: 600px) {
   .navigation {
@@ -236,25 +237,29 @@ img {
 }
 .home .header {
   padding-bottom: 10px;
+  margin: 0 10em;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 600px) {
   .home .header {
     margin: 0 2.5em;
+    padding: 0;
   }
 }
 .home .header img {
   padding-bottom: 20px;
 }
 .home .content-section {
-  margin: 30px 0;
+  margin: 0 10em;
+  padding: 30px 0 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 @media (max-width: 600px) {
   .home .content-section {
     margin: 0 2.5em;
+    padding: 0 0 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
@@ -272,8 +277,8 @@ img {
   }
 }
 .home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
+  width: 47%;
+  padding-left: 0;
 }
 @media (max-width: 600px) {
   .home .content-section .img-content {
@@ -303,7 +308,6 @@ img {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
-  padding-top: 30px;
 }
 @media (max-width: 600px) {
   .home .inverse-content .img-content {
@@ -311,12 +315,12 @@ img {
   }
 }
 .home .img-content {
-  padding-right: 1%;
+  padding-right: 0;
   padding-left: 0;
 }
 .home .content-destination {
-  width: 75%;
-  margin: 0 auto 30px;
+  width: 60%;
+  margin: 30px auto 30px;
 }
 @media (max-width: 600px) {
   .home .content-destination {
@@ -338,6 +342,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
+  margin: 0 10em;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
@@ -361,7 +366,7 @@ img {
   }
 }
 .home .content-pick .destination .btn {
-  background-color: #17A2B8;
+  background-color: teal;
   border: none;
   color: #FFFFFF;
   padding: 0.7em 0;

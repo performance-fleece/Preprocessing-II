@@ -1,21 +1,27 @@
 .home {
   .header {
+    // display: flex;
+    // flex-direction: column;
     padding-bottom: 10px;
+    margin: 0 10em;
     border-bottom: 2px dashed @navigation-border;
     @media @mobile {
       margin: 0 2.5em;
+      padding: 0;
     }
     img {
       padding-bottom: 20px;
     }
   }
   .content-section {
-    margin: 30px 0;
+    margin: 0 10em;
+    padding: 30px 0 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     @media @mobile {
       margin: 0 2.5em;
+      padding: 0 0 0;
       display: flex;
       flex-flow: column nowrap;
       justify-content: stretch;
@@ -32,8 +38,8 @@
     }
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+      width: 47%;
+      padding-left: 0;
       @media @mobile {
         width: 100%;
         padding-left: 0;
@@ -60,7 +66,7 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-      padding-top: 30px;
+      // padding-top: 30px;
     }
     .img-content {
       @media @mobile {
@@ -70,13 +76,13 @@
   }
 
   .img-content {
-    padding-right: 1%;
+    padding-right: 0;
     padding-left: 0;
 }
 
 .content-destination {
-  width: 75%;
-  margin: 0 auto 30px;
+  width: 60%;
+  margin: 30px auto 30px;
   @media @mobile {
     display: flex;
     flex-flow: column wrap;
@@ -97,6 +103,7 @@
 
 .content-pick {
   padding-top: 30px;
+  margin: 0 10em;
   border-top: 2px dashed @navigation-border;
   display: flex;
   justify-content: space-between;
@@ -117,7 +124,7 @@
     }
 
     .btn {
-      .buttonmix(@button-bg);
+      .buttonmix(teal);
       @media @mobile {
         align-self: center;
         width: 100%;
